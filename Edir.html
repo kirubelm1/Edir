@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Tracker</title>
+  <link rel="stylesheet" href="Edir.CSS">
+</head>
+<body>
+  <h1>የ መዳኒሃለም መለዳጃ እድር</h1>
+  <!-- Form to Add Payment -->
+  <form id="paymentForm">
+    <label for="name">ስም:</label>
+    <input type="text" id="name" required>
+
+    <label for="month">ወር:</label>
+    <input type="text" id="month" required>
+
+    <label for="paymentDate">የተከፈለበት ጊዘ:</label>
+    <input type="date" id="paymentDate" required>
+
+    <label for="amountPaid">ብር:</label>
+    <input type="number" id="amountPaid" required>
+
+    <label for="otherAmount">ላሌ ክፍያ:</label>
+    <input type="number" id="otherAmount" required>
+<br>
+    <label for="status">ሁኔታ:</label>
+    <select id="status">
+      <option value="paid">ተከፍላል</option>
+      <option value="unpaid">አልተከፈለም</option>
+    </select>
+
+    <button type="submit">Add Payment</button>
+  </form>
+
+  <h2>Payment History</h2>
+  <table id="paymentTable">
+    <thead>
+      <tr>
+        <th>ስም</th>
+        <th>ወር</th>
+        <th>የተከፈለበት ጊዘ</th>
+        <th>ብር</th>
+        <th>ላሌ ክፍያ</th>
+        <th>ሁኔታ</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Payment records will appear here -->
+    </tbody>
+  </table>
+
+  <script src="Edir.js"></script>
+</body>
+</html>
